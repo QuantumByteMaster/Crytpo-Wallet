@@ -2,7 +2,7 @@ import { useState } from "react";
 import { mnemonicToSeedSync } from "bip39";
 import { HDNodeWallet } from "ethers";
 
-export function EthWallet({ emonicmn }) {
+export function EthWallet({ mnemonic }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [addresses, setAddresses] = useState([]);
 
